@@ -10,7 +10,7 @@ class binary
 public:
     void read(void);
     void check_binary(void);
-    void ones_compliment(void); 
+    void ones_compliment(void);
     void display(void);
 };
 
@@ -33,6 +33,8 @@ void binary ::check_binary(void)
             exit(0);
         }
     }
+
+    cout << "Entered number is binary number" << endl;
 }
 
 void binary ::ones_compliment(void)
@@ -54,7 +56,7 @@ void binary ::ones_compliment(void)
 
 void binary ::display()
 {
-    cout << "displaying your number" << endl;
+    cout << "displaying compliment of your number" << endl;
 
     for (int i = 0; i < s.length(); i++)
     {
@@ -70,9 +72,8 @@ int main()
     binary b;
     b.read();
     b.check_binary();
-    b.display();
     b.ones_compliment();
     b.display();
-    
-return 0;
+
+    return 0;
 }
