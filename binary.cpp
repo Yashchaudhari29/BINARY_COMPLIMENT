@@ -54,7 +54,7 @@ void binary ::ones_compliment(void)
     }
 }
 
-void binary ::display()
+void binary ::display(void)
 {
     cout << "displaying compliment of your number" << endl;
 
